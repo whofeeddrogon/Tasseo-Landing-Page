@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Tasseo social preview</title>
+  <desc id="desc">Tasseo, an oracle that remembers your story.</desc>
+  <defs>
+    <radialGradient id="glowPink" cx="28%" cy="30%" r="52%">
+      <stop offset="0%" stop-color="#ff71b5" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#ff71b5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCyan" cx="78%" cy="54%" r="46%">
+      <stop offset="0%" stop-color="#38d8ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#38d8ff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="logo" x1="250" x2="820" y1="0" y2="0">
+      <stop offset="0%" stop-color="#9b5cff"/>
+      <stop offset="45%" stop-color="#ff71b5"/>
+      <stop offset="100%" stop-color="#60dbff"/>
+    </linearGradient>
+    <linearGradient id="ring" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ff71b5"/>
+      <stop offset="52%" stop-color="#9b5cff"/>
+      <stop offset="100%" stop-color="#38d8ff"/>
+    </linearGradient>
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="#090411"/>
+  <rect width="1200" height="630" fill="url(#glowPink)"/>
+  <rect width="1200" height="630" fill="url(#glowCyan)"/>
+
+  <g opacity="0.48">
+    <circle cx="142" cy="95" r="2" fill="#fff"/>
+    <circle cx="246" cy="524" r="2.5" fill="#ffb4dc"/>
+    <circle cx="1010" cy="108" r="2" fill="#fff"/>
+    <circle cx="1092" cy="438" r="2.5" fill="#79e6ff"/>
+    <circle cx="708" cy="70" r="1.8" fill="#ffd36c"/>
+    <circle cx="512" cy="560" r="1.8" fill="#fff"/>
+  </g>
+
+  <g transform="translate(785 145)" filter="url(#softGlow)">
+    <circle cx="145" cy="145" r="116" fill="none" stroke="url(#ring)" stroke-width="11"/>
+    <circle cx="145" cy="145" r="70" fill="#130920" opacity="0.9"/>
+    <path d="M75 145c23-38 48-56 75-56s52 18 75 56c-23 38-48 56-75 56s-52-18-75-56Z" fill="none" stroke="#f4eaf8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="150" cy="145" r="26" fill="none" stroke="#ffd36c" stroke-width="8"/>
+    <path d="M150 95c-11 31-11 69 0 100" stroke="#ffd36c" stroke-width="6" stroke-linecap="round"/>
+    <path d="M104 78l9-18 9 18 18 9-18 9-9 18-9-18-18-9 18-9Zm148 134 7-14 7 14 14 7-14 7-7 14-7-14-14-7 14-7Z" fill="#ff71b5"/>
+  </g>
+
+  <g transform="translate(90 150)">
+    <text x="0" y="90" fill="url(#logo)" font-family="Georgia, 'Times New Roman', serif" font-size="108" font-weight="700">Tasseo</text>
+    <text x="4" y="170" fill="#f5f5f7" font-family="Georgia, 'Times New Roman', serif" font-size="48">An Oracle That Remembers</text>
+    <text x="4" y="228" fill="#d7d7e8" font-family="Arial, sans-serif" font-size="28">Cup readings, symbols, astrology, and ritual chat.</text>
+    <g transform="translate(4 280)">
+      <rect x="0" y="0" width="178" height="56" rx="28" fill="#ff71b5" opacity="0.18" stroke="#ff71b5" stroke-opacity="0.5"/>
+      <text x="30" y="37" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">Cup Vision</text>
+      <rect x="196" y="0" width="195" height="56" rx="28" fill="#8e5cff" opacity="0.18" stroke="#8e5cff" stroke-opacity="0.55"/>
+      <text x="226" y="37" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">Oracle Chat</text>
+      <rect x="410" y="0" width="220" height="56" rx="28" fill="#38d8ff" opacity="0.13" stroke="#38d8ff" stroke-opacity="0.46"/>
+      <text x="440" y="37" fill="#fff" font-family="Arial, sans-serif" font-size="20" font-weight="700">Symbol Collection</text>
+    </g>
+  </g>
+</svg>
