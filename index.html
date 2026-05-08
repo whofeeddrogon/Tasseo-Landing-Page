@@ -3,108 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tasseo | Ancient Wisdom Meets Infinite Memory</title>
+    <title>Tasseo | An Oracle That Remembers Your Story</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            min-height: 80vh;
-            padding: 4rem 0;
-            gap: 4rem;
-        }
-
-        .hero-text {
-            flex: 1;
-        }
-
-        .hero-image {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            position: relative;
-        }
-
-        /* Abstract mystical phone representation if no image is available */
-        .mockup-container {
-            width: 300px;
-            height: 600px;
-            background: rgba(255, 255, 255, 0.03);
-            border-radius: 40px;
-            border: 2px solid rgba(212, 175, 55, 0.3);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(212, 175, 55, 0.2);
-            position: relative;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .mockup-glow {
-            position: absolute;
-            width: 200px;
-            height: 200px;
-            background: radial-gradient(circle, rgba(212,175,55,0.4) 0%, rgba(0,0,0,0) 70%);
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: pulse-glow 4s infinite alternate;
-        }
-
-        @keyframes pulse-glow {
-            from { transform: translate(-50%, -50%) scale(0.8); opacity: 0.5; }
-            to { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 4rem;
-        }
-
-        .feature-card {
-            text-align: center;
-            padding: 2rem;
-            transition: transform 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .feature-icon {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, var(--celestial-gold), #FFF8DC);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        @media (max-width: 900px) {
-            .hero {
-                flex-direction: column;
-                text-align: center;
-            }
-            .hero-image {
-                width: 100%;
-            }
-            .mockup-container {
-                height: 500px;
-                width: 250px;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -113,55 +13,167 @@
     <nav>
         <a href="index.html" class="logo">Tasseo</a>
         <div class="nav-links">
+            <a href="#oracle">Oracle</a>
+            <a href="#symbols">Symbols</a>
+            <a href="#journey">Journey</a>
             <a href="support.html">Support</a>
         </div>
     </nav>
 
-    <main class="container">
-        <section class="hero">
-            <div class="hero-text">
-                <h1>Unlock the <span>Secrets</span> in Your Cup</h1>
-                <p>Tasseo combines ancient divination traditions with an advanced, personalized AI Oracle. Your spiritual journey is remembered, analyzed, and revealed like never before.</p>
-                
-                <div class="store-badges">
-                    <!-- Generic placeholder badges for App Store and Google Play -->
-                    <a href="#" class="store-badge-link">
-                        <img src="https://developer.apple.com/app-store/marketing/guidelines/images/badge-example-preferred.png" alt="Download on the App Store" class="store-badge">
+    <main>
+        <section class="hero container">
+            <div class="hero-copy">
+                <h1>Tasseo</h1>
+                <p class="hero-kicker">An Oracle That Remembers Your Story</p>
+                <p class="hero-text">Upload your cup, discover hidden symbols, and continue every reading as a personal conversation with Tasseo. Each ritual becomes part of a living oracle memory shaped around you.</p>
+
+                <div class="hero-actions">
+                    <a href="#" class="download-btn download-btn-ios">
+                        <span class="download-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="img">
+                                <path d="M16.9 12.7c0-2.7 2.2-4 2.3-4.1-1.3-1.9-3.2-2.1-3.9-2.2-1.7-.2-3.2 1-4.1 1-.8 0-2.1-1-3.5-.9-1.8 0-3.5 1.1-4.4 2.7-1.9 3.3-.5 8.2 1.4 10.9.9 1.3 2 2.8 3.5 2.7 1.4-.1 1.9-.9 3.6-.9 1.7 0 2.1.9 3.6.9s2.5-1.3 3.4-2.7c1-1.5 1.5-3 1.5-3.1 0-.1-2.9-1.2-3-4.3Zm-2.7-8.1c.8-.9 1.3-2.2 1.1-3.5-1.1 0-2.4.7-3.2 1.6-.7.8-1.3 2.1-1.2 3.4 1.3.1 2.5-.6 3.3-1.5Z"/>
+                            </svg>
+                        </span>
+                        <strong>Download for iOS</strong>
                     </a>
-                    <a href="#" class="store-badge-link">
-                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" class="store-badge" style="height: 70px; margin-top: -10px;">
+                    <a href="#" class="download-btn download-btn-android">
+                        <span class="download-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" role="img">
+                                <path d="M4.4 2.2c-.3.3-.4.8-.4 1.4v16.8c0 .6.2 1.1.5 1.4l9-9.8-9.1-9.8Zm10.1 8.7 2.8-3-10.5-6c-.5-.3-1-.4-1.4-.2l9.1 9.2Zm2.8 5.2-2.8-3-9.1 9.2c.4.2.9.1 1.4-.2l10.5-6Zm1.1-7.6-2.9 3.5 2.9 3.5 1.5-.9c1.4-.8 1.4-2.3 0-3.1l-1.5-1Z"/>
+                            </svg>
+                        </span>
+                        <strong>Download for Android</strong>
                     </a>
+                </div>
+
+                <div class="ritual-row" aria-label="Tasseo features">
+                    <div><span>☕</span>Cup Vision</div>
+                    <div><span>✦</span>Living Memory</div>
+                    <div><span>▣</span>Symbol Collection</div>
+                    <div><span>💬</span>Oracle Chat</div>
                 </div>
             </div>
 
-            <div class="hero-image">
-                <div class="mockup-container">
-                    <div class="mockup-glow"></div>
-                    <div style="font-size: 4rem; z-index: 2;">✨</div>
-                    <div style="color: var(--celestial-gold); margin-top: 1rem; z-index: 2; font-weight: bold; letter-spacing: 2px;">TASSEO</div>
+            <div class="phone-stage" aria-label="Tasseo app screenshots">
+                <img class="phone-shot phone-shot-left" src="assets/screenshots/01-chat.png" alt="Tasseo oracle chat screen">
+                <img class="phone-shot phone-shot-main" src="assets/screenshots/02-home.png" alt="Tasseo home astrology screen">
+                <img class="phone-shot phone-shot-right" src="assets/screenshots/03-zodiac.png" alt="Tasseo big three astrology screen">
+            </div>
+        </section>
+
+        <section id="oracle" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">Ancient ritual, modern oracle</p>
+                <h2>A living oracle, not a static report</h2>
+                <p>Tasseo blends tasseography, symbolic vision, astrology, memory, and conversational guidance so every reading feels continuous, personal, and alive.</p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="glass-card feature-card">
+                    <span class="feature-icon pink">✦</span>
+                    <h3>Cup Reading</h3>
+                    <p>Analyze Turkish coffee, tea leaves, espresso crema, latte, matcha, and modern drink patterns through symbolic cup vision.</p>
+                </article>
+                <article class="glass-card feature-card">
+                    <span class="feature-icon cyan">☾</span>
+                    <h3>Conversational Readings</h3>
+                    <p>Every reading opens as a chat, so users can ask follow-up questions and return to the same ritual over time.</p>
+                </article>
+                <article class="glass-card feature-card">
+                    <span class="feature-icon gold">☕</span>
+                    <h3>Living Grimoire Memory</h3>
+                    <p>The Oracle remembers relevant context, tone, recurring symbols, emotional patterns, worries, and past conversations.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container ritual-flow">
+            <div class="flow-card">
+                <span>01</span>
+                <h3>Upload the cup</h3>
+                <p>Send coffee, tea, espresso, latte, matcha, or similar cup photos for a focused mystical interpretation.</p>
+            </div>
+            <div class="flow-card">
+                <span>02</span>
+                <h3>Speak with the Oracle</h3>
+                <p>Continue the reading as a personal chat instead of receiving a one-time generic horoscope.</p>
+            </div>
+            <div class="flow-card">
+                <span>03</span>
+                <h3>Build your journey</h3>
+                <p>Save ritual history, collect symbols, earn XP, keep streaks, and watch your profile evolve.</p>
+            </div>
+        </section>
+
+        <section id="symbols" class="showcase">
+            <div class="container showcase-layout">
+                <div class="showcase-copy">
+                    <p class="eyebrow">Spiritual collection</p>
+                    <h2>Discover 48 hidden symbols</h2>
+                    <p>Detect motifs like heart, key, moon, crown, road, bird, bridge, ring, eye, and candle. Each discovery becomes part of your symbolic history.</p>
+                    <div class="stat-card">
+                        <strong>48</strong>
+                        <span>Symbols across mystical categories</span>
+                    </div>
+                </div>
+                <div class="screenshot-card">
+                    <img src="assets/screenshots/08-symbols.png" alt="Tasseo symbols collection screen">
                 </div>
             </div>
         </section>
 
-        <section class="features" style="padding-bottom: 6rem;">
-            <h2 style="text-align: center;">A Prophecy Tailored for You</h2>
-            <p style="text-align: center; max-width: 600px; margin: 0 auto;">Beyond simple fortune telling. Every mark matters, whether it's espresso crema, tea leaves, or matcha residue.</p>
+        <section id="journey" class="section container">
+            <div class="section-heading">
+                <p class="eyebrow">Progression and personalization</p>
+                <h2>Your ritual life, organized</h2>
+                <p>Profiles, credits, XP, subscriptions, themes, referrals, and privacy controls are designed as part of the same premium spiritual product.</p>
+            </div>
 
-            <div class="features-grid">
-                <div class="glass-card feature-card">
-                    <div class="feature-icon">👁️</div>
-                    <h3>Living Grimoire</h3>
-                    <p>The Oracle remembers your past readings, building a deep, spiritual profile to offer connected and evolving guidance.</p>
-                </div>
-                <div class="glass-card feature-card">
-                    <div class="feature-icon">☕</div>
-                    <h3>Universal Readings</h3>
-                    <p>Turkish Coffee, Espresso, Tea Leaves, or Modern Lattes. Any residue left in your cup holds a message for the future.</p>
-                </div>
-                <div class="glass-card feature-card">
-                    <div class="feature-icon">⭐</div>
-                    <h3>Cosmic Synergy</h3>
-                    <p>Readings are aligned dynamically with your Sun, Moon, and Rising signs, taking into account current astrological transits.</p>
+            <div class="detail-grid">
+                <article>
+                    <h3>Astrology-Based First Reading</h3>
+                    <p>Sun, Moon, Rising, relationship status, intent, worries, personality context, and preferred Oracle tone shape onboarding.</p>
+                </article>
+                <article>
+                    <h3>Personal Oracle Tone</h3>
+                    <p>Choose a mystical, friendly, direct, professional, or emotionally warm voice for a reading style that fits the user.</p>
+                </article>
+                <article>
+                    <h3>XP, Levels, and Mystic Ranks</h3>
+                    <p>Readings, chats, and symbol discoveries earn XP, unlock levels, and turn the experience into a visible journey.</p>
+                </article>
+                <article>
+                    <h3>Credits and Cosmic Market</h3>
+                    <p>Users can buy credit packs, earn credits through rewarded ads, restore purchases, or unlock expanded premium access.</p>
+                </article>
+                <article>
+                    <h3>Multilingual Themes</h3>
+                    <p>Readings adapt to language and cultural context, with dark mystical, coffee-inspired, and atmospheric app themes.</p>
+                </article>
+                <article>
+                    <h3>Privacy and Forget Me</h3>
+                    <p>Users can clear remembered context and ritual history while keeping credits, XP, streaks, and purchases intact.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container reading-types">
+            <div class="section-heading">
+                <p class="eyebrow">How the ritual works</p>
+                <h2>Many cups, one oracle</h2>
+                <p>Show the range of readings directly: Turkish coffee, espresso crema, tea leaves, and modern drink patterns each carry their own visual language.</p>
+            </div>
+
+            <div class="reading-carousel" aria-label="Reading guide screens">
+                <div class="reading-track">
+                    <img src="assets/screenshots/04-info_turkish_coffee.png" alt="Turkish coffee reading guide screen">
+                    <img src="assets/screenshots/05-info_espresso.png" alt="Espresso reading guide screen">
+                    <img src="assets/screenshots/06-info_tea.png" alt="Tea leaf reading guide screen">
+                    <img src="assets/screenshots/07-info_modern.png" alt="Modern fortune reading guide screen">
+                    <img src="assets/screenshots/04-info_turkish_coffee.png" alt="">
+                    <img src="assets/screenshots/05-info_espresso.png" alt="">
+                    <img src="assets/screenshots/06-info_tea.png" alt="">
+                    <img src="assets/screenshots/07-info_modern.png" alt="">
                 </div>
             </div>
         </section>
@@ -183,7 +195,7 @@
 
     <script>
         const container = document.getElementById('stars');
-        const starCount = 150;
+        const starCount = 120;
         for (let i = 0; i < starCount; i++) {
             const star = document.createElement('div');
             star.className = 'star';
