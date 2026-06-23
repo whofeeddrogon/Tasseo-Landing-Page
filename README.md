@@ -19,9 +19,5 @@ Upload Turkish coffee, espresso, tea, latte, matcha, or similar cup photos, disc
 
 ## Download Links
 
-The landing page includes separate download calls to action for iOS and Android.
-
-Store links can be added when they are ready:
-
-- iOS: App Store product URL
-- Android: Google Play product URL
+- Android: https://play.google.com/store/apps/details?id=com.tasseo.app
+- iOS: Coming soon
