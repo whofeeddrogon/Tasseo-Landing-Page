@@ -6,7 +6,7 @@ Upload Turkish coffee, espresso, tea, latte, matcha, or similar cup photos, disc
 
 ## Website
 
-[Visit the Tasseo landing page](https://whofeeddrogon.github.io/Coffee-Tea-Oracle-And-Astrology)
+[Visit the Tasseo landing page](https://tassao-app.web.app)
 
 ## Highlights
 
