@@ -23,5 +23,5 @@ The landing page includes separate download calls to action for iOS and Android.
 
 Store links can be added when they are ready:
 
-- iOS: App Store product URL
-- Android: Google Play product URL
+- iOS: Hopefully Apple will approve the app..
+- Android: [Google Play product URL](https://play.google.com/store/apps/details?id=com.tasseo.app)
